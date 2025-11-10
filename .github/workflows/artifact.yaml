@@ -29,3 +29,9 @@ jobs:
     steps:
       - name: Deploy
         run: echo "Deploying the build artifact..."
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+      - name: List artifact contents
+        run: ls -la
