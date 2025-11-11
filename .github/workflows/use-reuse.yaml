@@ -1,4 +1,4 @@
-name: Testing artifact workflow
+name: Reusable workflow
 on:
   push:
     branches:
