@@ -9,6 +9,10 @@ on:
         description: "The environment to deploy to"
         required: true
         default: "production"
+        options:
+          - production
+          - staging
+          - development
 jobs:
   tests:
     runs-on: ubuntu-latest
