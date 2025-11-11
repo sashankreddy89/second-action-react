@@ -8,10 +8,12 @@ on:
       deploy-environment:
         description: "The environment to deploy to"
         required: true
+        type: choice
         options:
           - production
           - staging
           - development
+        default: development
 jobs:
   tests:
     runs-on: ubuntu-latest
