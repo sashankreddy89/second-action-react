@@ -14,6 +14,9 @@ on:
           - staging
           - development
         default: development
+      VERSION:
+        description: "version"
+        type: string
 jobs:
   tests:
     runs-on: ubuntu-latest
